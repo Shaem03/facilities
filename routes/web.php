@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/facility_booking', function () {
     return view('welcome');
 });
-Route::get('facility_booking', 'FacilityBooking@show');
+Route::get('/', 'FacilityBooking@show');
 Route::post('sub', 'FacilityBooking@sub');
